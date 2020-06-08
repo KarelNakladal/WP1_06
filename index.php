@@ -2,6 +2,8 @@
 $wood = true;
 $rope = false;
 $nails = true;
+$rope = true;
+$nails = false;
 $knife = true;
 ?>
 
@@ -19,6 +21,7 @@ $knife = true;
 
 if ($wood) {
     echo '<img src="wood.png" alt="luk"><br>';
+    echo '<img src="wood.png" alt="drevo"><br>';
 } else {
     echo "Nemáš dřevo <br>";
 }
@@ -31,12 +34,14 @@ if ($rope) {
 
 if ($nails) {
     echo '<img src="nails.jpg" alt="hřebíky"><br>';
+    echo '<img src="nails.jpg" alt="hrebiky"><br>';
 } else {
     echo "Nemáš hřebíky <br>";
 }
 
 if ($knife) {
     echo '<img src="knife.jpg" alt="nůž"><br>';
+    echo '<img src="knif.jpg" alt="nuz"><br>';
 } else {
     echo "Nemáš nůž <br>";
 }
@@ -51,10 +56,12 @@ if ($rope && $knife && $wood) {
     echo '<img src="bow.jpg" alt="luk"><br>';
 } if ($nails && $wood) {
     echo '<img src="bwn.jpg" alt="pálka s hřebíky"><br>';
+    echo '<img src="bwn.jpg" alt="palka s hrebiky"><br>';
 } if ($rope && $wood) {
     echo '<img src="nun.jpg" alt="nunchaky"><br>';
 } if ($knife && $wood) {
     echo '<img src="spear.png" alt="kopí"><br>';
+    echo '<img src="spear.png" alt="kopi"><br>';
 }
 
 ?>
